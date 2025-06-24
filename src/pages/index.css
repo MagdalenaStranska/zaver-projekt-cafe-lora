@@ -1,5 +1,5 @@
 /* Header */
-header {
+/*header {
   padding: 1rem 0 1rem 0;
   height: 5rem;
   background-color: #301a1a;
@@ -90,9 +90,10 @@ nav a:hover {
   .nav-btn:focus {
     outline: none;
   }
-}
+} */
 
 /* Footer */
+/*
 footer {
   padding: 2rem 0;
   background-color: #301a1a;
@@ -104,8 +105,10 @@ footer {
   font-size: small;
   text-align: center;
 }
+  */
 
 /* Banner */
+/*
 .banner {
   padding-top: 0;
   background-image: url("./img/beans.jpg");
@@ -136,8 +139,9 @@ footer {
     text-align: center;
   }
 }
-
+*/
 /* Menu */
+/*
 .menu-intro {
   max-width: 20rem;
   margin: 0 auto 0 auto;
@@ -164,6 +168,8 @@ footer {
 }
 
 /* Menu - Drink */
+
+/*
 .drink {
   width: 20rem;
 }
@@ -218,8 +224,9 @@ footer {
 .order-btn:active {
   background-color: #e67e51;
 }
-
+*/
 /* Drink - Layer */
+/*
 .layer {
   display: flex;
   padding: 0.25rem;
@@ -237,9 +244,10 @@ footer {
 .layer__label {
   height: 1rem;
   line-height: 1rem;
-}
+} */
 
 /* Gallery */
+/*
 .gallery {
   min-height: 100vh;
   color: white;
@@ -274,8 +282,10 @@ footer {
     gap: 2rem;
   }
 }
+*/
 
 /* Contact */
+/*
 .contact {
   display: flex;
   flex-direction: column;
@@ -300,3 +310,4 @@ footer {
   width: 100%;
   height: auto;
 }
+*/
