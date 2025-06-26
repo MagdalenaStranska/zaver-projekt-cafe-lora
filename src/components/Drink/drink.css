@@ -54,7 +54,7 @@
   background-color: #e67e51;
 }
 
-/* Drink - Layer */
+/* Drink - Layer
 .layer {
   display: flex;
   padding: 0.25rem;
@@ -72,4 +72,4 @@
 .layer__label {
   height: 1rem;
   line-height: 1rem;
-}
+} */

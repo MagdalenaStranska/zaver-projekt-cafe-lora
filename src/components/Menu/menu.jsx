@@ -103,7 +103,7 @@ export const Menu = () => {
     //image="http://localhost:4000/assets/cups/romano.png"
     image="/cups/lungo.png" //vloženo pouze pro otestování zobrazení obrázku
     layers={[
-      { color: '#fbdf5b', label: 'citrón' },
+      { color: '#feeeca', label: 'mléčná pěna' },
       { color: '#613916', label: 'espresso' },
   ]}
 />
