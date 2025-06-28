@@ -86,28 +86,28 @@ import { Drink } from '../Drink/drink';
 
     )
 }*/
+/*fetch('http://localhost:4001/api/drinks')
+  .then((response) => response.json())
+  .then((data) => {
+    console.log('Nápoje z API:', data); // Zatím jen výpis do konzole
+  });*/
 
-export const Menu = () => {
-    return(
+export const Menu = ({ drinks }) => {
+    return (
      <section id="menu" className="menu">
         <div className="container">
           <h2>Naše nabídka</h2>
           <p className="menu-intro">
             Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
           </p>
-          <div className="drinks-list">
-  <Drink
-    id={0}
-    name="Romano"
-    ordered={false}
-    //image="http://localhost:4000/assets/cups/romano.png"
-    image="/cups/lungo.png" //vloženo pouze pro otestování zobrazení obrázku
-    layers={[
-      { color: '#feeeca', label: 'mléčná pěna' },
-      { color: '#613916', label: 'espresso' },
-  ]}
-/>
-          </div>
+          
+        <div className="drinks-list">
+          {Array.isArray(drinks) &&
+            drinks.map((drink) => (
+              <Drink key={drink.id} {...drink} />
+            ))}
+        </div>
+        
 
           <div className="order-detail">
             <a href="/order.html">Detail objednávky</a>
@@ -115,7 +115,7 @@ export const Menu = () => {
         </div>
         </section>
 
-    )
-}
+    );
+};
 
 
