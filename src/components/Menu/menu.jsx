@@ -86,7 +86,7 @@ import { Drink } from '../Drink/drink';
 
     )
 }*/
-/*fetch('http://localhost:4001/api/drinks')
+/*fetch('http://localhost:4000/api/drinks')
   .then((response) => response.json())
   .then((data) => {
     console.log('Nápoje z API:', data); // Zatím jen výpis do konzole

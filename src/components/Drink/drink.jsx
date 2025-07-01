@@ -6,7 +6,7 @@ export const Drink = ({ id, name, ordered, image, layers }) => {
     <div className="drink">
       <div className="drink__product">
         <div className="drink__cup">
-          <img src={`http://localhost:4001${image}`} alt={name} />
+          <img src={`http://localhost:4000${image}`} alt={name} />
         </div>
         <div className="drink__info">
           <h3>{name}</h3>
@@ -19,10 +19,14 @@ export const Drink = ({ id, name, ordered, image, layers }) => {
   ))}
         </div>
       </div>
-      {/* Tlačítko objednání (zatím nefunkční) */}
-      <div className="drink__controls">
-        <button className='order-btn'>Objednat</button>
-      </div>
+        <form className="drink__controls" 
+        data-id={id}
+        data-ordered={ordered}
+        >
+        <button className={`order-btn ${ordered ? 'order-btn--ordered' : ''}`}>
+          {ordered ? 'Zrušit' : 'Objednat'}
+        </button>
+      </form>
     </div>
   );
 };
