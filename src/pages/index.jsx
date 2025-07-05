@@ -17,14 +17,18 @@ fetch('http://localhost:4000/api/drinks')
 
     document.querySelector('#root').innerHTML = render(
       <div className="page">
-        <Header />
+        <header>
+      <Header />
+    </header>
         <main>
           <Banner />
           <Menu drinks={data.data} />
           <Gallery />
           <Contact />
         </main>
-        <Footer />
+        <footer>
+      <Footer />
+    </footer>
       </div>
     );
 
